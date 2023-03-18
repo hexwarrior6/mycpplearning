@@ -1,4 +1,3 @@
-#include<bits/stdc++.h>
 #define maxn 100007  //元素总个数
 #define ll long long
 ll Sum[maxn<<2],Add[maxn<<2];//Sum求和，Add为懒惰标记 
