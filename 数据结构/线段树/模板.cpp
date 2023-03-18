@@ -1,3 +1,4 @@
+#include<bits/stdc++.h>
 #define maxn 100007  //元素总个数
 #define ll long long
 ll Sum[maxn<<2],Add[maxn<<2];//Sum求和，Add为懒惰标记 
@@ -98,6 +99,7 @@ ll Query(ll L,ll R,ll l,ll r,ll rt)
         ANS+=Query(L,R,m+1,r,rt<<1|1);
 	return ANS;
 }
+
 
 //建树 
 Build(1,n,1); 
