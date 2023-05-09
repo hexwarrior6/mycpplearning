@@ -32,7 +32,7 @@ clear()：清空容器。
 ### list（双向链表）
 1. `list.begin()`&`list.end()`返回前和末尾的iterator
 2. `list.front()`&`list.back()`返回前和末尾的元素值
-3. 
+3. [`list.empty`测试列表是否为空](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#empty)
 
 
 
