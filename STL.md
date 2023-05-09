@@ -30,14 +30,20 @@ clear()：清空容器。
 ```
 
 ### list（双向链表）
-1. `list.begin()`&`list.end()`返回前和末尾的iterator
-2. `list.front()`&`list.back()`返回前和末尾的元素值
-3. [`list.empty()`测试列表是否为空](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#empty)
-4. [`list.erase()`从列表中的指定位置移除一个或一系列元素](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#erase)
-5. `list.clear()`清除所有元素
-6. [`list.insert()`将一个、几个或一系列元素插入列表中的指定位置](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#insert)
-7. [`list.merage()`将元素从参数列表移除，将它们插入目标列表，将新的组合元素集以升序或其他指定顺序排序。](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#merge)
-
+1. `pop_back`删除列表末尾的元素。
+`pop_front`删除列表起始处的一个元素。
+`push_back`在列表的末尾添加元素。
+`push_front`在列表的开头添加元素。
+2. `list.begin()`&`list.end()`返回前和末尾的iterator
+3. `list.front()`&`list.back()`返回前和末尾的元素值
+4. [`list.empty()`测试列表是否为空](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#empty)
+5. [`list.erase()`从列表中的指定位置移除一个或一系列元素](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#erase)
+6. [`list.remove()`清除列表中与指定值匹配的元素](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#remove)
+7. [`list.remove()`将满足指定谓词的元素从列表中消除](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#remove_if)
+8. [`list.insert()`将一个、几个或一系列元素插入列表中的指定位置](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#insert)
+9. [`list.merage()`将元素从参数列表移除，将它们插入目标列表，将新的组合元素集以升序或其他指定顺序排序。](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#merge)
+10. `reverse`反转列表中元素的顺序
+11. `unique`从列表中删除满足某些其他二元谓词的_相邻_重复元素或相邻元素
 
 
 
