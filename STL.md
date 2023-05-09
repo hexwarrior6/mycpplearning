@@ -1,18 +1,19 @@
 # STL
 ## STL容器
 >**序列容器**  
-序列容器维护你指定的插入元素的顺序。  
-vector 容器的行为类似于数组，但可以根据要求自动增长。 它可以随机访问、连续存储，长度也非常灵活。 基于上述和其他原因，vector 是多数应用程序的首选序列容器。 若不确定要使用哪种序列容器，请首先使用矢量！ 有关详细信息，请参阅 vector 类。  
-array 容器具备 vector 的某些优点，但长度不够灵活。 有关详细信息，请参阅 array 类。  
-deque（双端队列）容器支持在容器的起点和终点进行快速插入和删除。 它享有 vector 随机访问和长度灵活的优点，但是不具备连续性。 有关详细信息，请参阅 deque 类。  
-list 容器是双向链接列表，在容器内的任意位置启用了双向访问、快速插入和快速删除，但你不能随机访问此容器中的元素。 有关详细信息，请参阅 list 类。  
-forward_list 容器是单独链表，list 的向前访问版本。 有关详细信息，请参阅 forward_list 类。  
-**关联容器**  
-在关联容器中，按照预定义的顺序插入元素，例如按升序排序。 无序的关联容器也可用。 关联容器可分为两个子集：映射和组集。  
-map，有时称为字典，包含键/值对。 键用于对序列排序，值与该键关联。 例如，map可能包含许多键（代表文本中每个独特的单词）和相应的值（代表每个单词在文本中出现的次数）。 map的无序版本是 unordered_map。 有关详细信息，请参阅 map 类和 unordered_map 类。  
-set仅是按升序排列每个元素的容器，值也是键。 set的无序版本是 unordered_set。 有关详细信息，请参阅 set 类和 unordered_set 类。  
-map 和 set 都仅允许将键或元素的一个实例插入容器中。 如果需要元素的多个实例，请使用multimap或multiset。 无序版本是 unordered_multimap 和 unordered_multiset。 有关详细信息，请参阅 multimap 类、unordered_multimap 类、multiset 类 和 unordered_multiset 类。  
-有序的映射和组集支持双向迭代器，其未排序副本支持向前迭代器。 有关更多信息，请参见 迭代器。  
+>序列容器维护你指定的插入元素的顺序。  
+>1. vector 容器的行为类似于数组，但可以根据要求自动增长。 它可以随机访问、连续存储，长度也非常灵活。 基于上述和其他原因，vector 是多数应用程序的首选序列容器。 若不确定要使用哪种序列容器，请首先使用矢量！ 有关详细信息，请参阅 vector 类。  
+>2. array 容器具备 vector 的某些优点，但长度不够灵活。 有关详细信息，请参阅 array 类。  
+>3. deque（双端队列）容器支持在容器的起点和终点进行快速插入和删除。 它享有 vector 随机访问和长度灵活的优点，但是不具备连续性。 有关详细信息，请参阅 deque 类。  
+>4. list 容器是双向链接列表，在容器内的任意位置启用了双向访问、快速插入和快速删除，但你不能随机访问此容器中的元素。 有关详细信息，请参阅 list 类。  
+>5. forward_list 容器是单独链表，list 的向前访问版本。 有关详细信息，请参阅 forward_list 类。  
+
+>**关联容器**  
+>在关联容器中，按照预定义的顺序插入元素，例如按升序排序。 无序的关联容器也可用。 关联容器可分为两个子集：映射和组集。  
+>1. map，有时称为字典，包含键/值对。 键用于对序列排序，值与该键关联。 例如，map可能包含许多键（代表文本中每个独特的单词）和相应的值（代表每个单词在文本中出现的次数）。 map的无序版本是 unordered_map。 有关详细信息，请参阅 map 类和 unordered_map 类。  
+>2. set仅是按升序排列每个元素的容器，值也是键。 set的无序版本是 unordered_set。 有关详细信息，请参阅 set 类和 unordered_set 类。  
+>3. map 和 set 都仅允许将键或元素的一个实例插入容器中。 如果需要元素的多个实例，请使用multimap或multiset。 无序版本是 unordered_multimap 和 unordered_multiset。 有关详细信息，请参阅 multimap 类、unordered_multimap 类、multiset 类 和 unordered_multiset 类。  
+>4. 有序的映射和组集支持双向迭代器，其未排序副本支持向前迭代器。 有关更多信息，请参见 迭代器。  
 [C++ 标准库容器 | Microsoft Learn](https://learn.microsoft.com/zh-cn/cpp/standard-library/stl-containers?view=msvc-170)
 
 ```cpp
