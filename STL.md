@@ -37,43 +37,47 @@ clear()：清空容器。
 
 #### 函数
 
-| 名称                                                         | 说明                                         | 其他序列容器        |
-| ------------------------------------------------------------ | -------------------------------------------- | ------------------- |
-| [`push_back`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#push_back) | 在矢量末尾处添加一个元素。                   | `push_front`（list) |
-| [`pop_back`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#pop_back) | 删除矢量末尾处的元素。                       | `pop_front`（list） |
-| [`insert`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#insert) | 将一个元素或多个元素插入到指定位置的向量中。 |                     |
-| [`at`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#at) | 返回对矢量中指定位置的元素的引用。           |                     |
-| [`begin`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#begin) | 对该向量中第一个元素返回随机访问迭代器。     |                     |
-| [`end`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#end) | 返回指向矢量末尾的随机访问迭代器。           |                     |
-| [`front`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#front) | 返回对向量中第一个元素的引用。               |                     |
-| [`back`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#back) | 返回对向量中最后一个元素的引用。             |                     |
-| [`erase`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#erase) | 从指定位置删除向量中的一个元素或一系列元素。 |                     |
-| [`clear`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#clear) | 清除向量的元素。                             |                     |
-| [`empty`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#empty) | 测试矢量容器是否为空。                       |                     |
-| [`swap`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#swap) | 交换两个向量的元素。                         |                     |
-| [`resize`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#resize) | 为矢量指定新的大小。                         |                     |
-| [`size`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#size) | 返回向量中的元素数量。                       |                     |
+| 名称                                                         | 说明                                         | list           | deque          |
+| ------------------------------------------------------------ | -------------------------------------------- | -------------- | -------------- |
+| [`push_back`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#push_back) | 在矢量末尾处添加一个元素。                   | 有`push_front` | 有`push_front` |
+| [`pop_back`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#pop_back) | 删除矢量末尾处的元素。                       | 有`pop_front`  | 有`pop_front`  |
+| [`insert`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#insert) | 将一个元素或多个元素插入到指定位置的向量中。 | X              |                |
+| [`at`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#at) | 返回对矢量中指定位置的元素的引用。           | X              |                |
+| [`begin`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#begin) | 对该向量中第一个元素返回随机访问迭代器。     |                |                |
+| [`end`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#end) | 返回指向矢量末尾的随机访问迭代器。           |                |                |
+| [`front`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#front) | 返回对向量中第一个元素的引用。               |                |                |
+| [`back`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#back) | 返回对向量中最后一个元素的引用。             |                |                |
+| [`erase`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#erase) | 从指定位置删除向量中的一个元素或一系列元素。 |                |                |
+| [`clear`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#clear) | 清除向量的元素。                             |                |                |
+| [`empty`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#empty) | 测试矢量容器是否为空。                       |                |                |
+| [`swap`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#swap) | 交换两个向量的元素。                         |                |                |
+| [`resize`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#resize) | 为矢量指定新的大小。                         | X              |                |
+| [`size`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#size) | 返回向量中的元素数量。                       |                |                |
 
 #### 运算符
 
-| 名称                                                         | 说明                                   | 其他序列容器 |
-| ------------------------------------------------------------ | -------------------------------------- | ------------ |
-| [`operator[]`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#op_at) | 返回对指定位置的矢量元素的引用。       | list无       |
-| [`operator=`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#op_eq) | 用另一个向量的副本替换该向量中的元素。 |              |
+| 名称                                                         | 说明list                               | list | deque |
+| ------------------------------------------------------------ | -------------------------------------- | ---- | ----- |
+| [`operator[]`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#op_at) | 返回对指定位置的矢量元素的引用。       | X    | Y     |
+| [`operator=`](https://learn.microsoft.com/zh-cn/cpp/standard-library/vector-class?view=msvc-170#op_eq) | 用另一个向量的副本替换该向量中的元素。 | Y    | Y     |
 
 ### list（双向链表）
 
 #### 函数
 
-| 名称                                                         | 说明                                                         | 其他序列容器 |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------ |
-| [`unique`](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#unique) | 从列表中删除满足某些其他二元谓词的相邻重复元素或相邻元素。   |              |
-| [`reverse`](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#reverse) | 反转列表中元素的顺序。                                       |              |
-| [`merge`](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#merge) | 将元素从参数列表移除，将它们插入目标列表，将新的组合元素集以升序或其他指定顺序排序。 |              |
-| [`remove`](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#remove) | 清除列表中与指定值匹配的元素。                               |              |
-| [`remove_if`](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#remove_if) | 将满足指定谓词的元素从列表中消除。                           |              |
-| [`sort`](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#sort) | 按升序或其他顺序关系排列列表中的元素。                       | **vector无** |
-| [`swap`](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#swap) | 交换两个列表的元素。                                         |              |
+> 均为list特有
+
+| 名称                                                         | 说明                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [`unique`](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#unique) | 从列表中删除满足某些其他二元谓词的相邻重复元素或相邻元素。   |
+| [`reverse`](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#reverse) | 反转列表中元素的顺序。                                       |
+| [`merge`](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#merge) | 将元素从参数列表移除，将它们插入目标列表，将新的组合元素集以升序或其他指定顺序排序。 |
+| [`remove`](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#remove) | 清除列表中与指定值匹配的元素。                               |
+| [`remove_if`](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#remove_if) | 将满足指定谓词的元素从列表中消除。                           |
+| [`sort`](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#sort) | 按升序或其他顺序关系排列列表中的元素。                       |
+| [`swap`](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#swap) | 交换两个列表的元素。                                         |
+
+[1]: 
 
 ### deque（双端队列）
 
