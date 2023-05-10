@@ -1,7 +1,10 @@
 # STL
+
 ## STL容器
+
 >**序列容器**  
 >序列容器维护你指定的插入元素的顺序。  
+>
 >1. vector 容器的行为类似于数组，但可以根据要求自动增长。 它可以随机访问、连续存储，长度也非常灵活。 基于上述和其他原因，vector 是多数应用程序的首选序列容器。 若不确定要使用哪种序列容器，请首先使用矢量！ 有关详细信息，请参阅 vector 类。  
 >2. array 容器具备 vector 的某些优点，但长度不够灵活。 有关详细信息，请参阅 array 类。  
 >3. deque（双端队列）容器支持在容器的起点和终点进行快速插入和删除。 它享有 vector 随机访问和长度灵活的优点，但是不具备连续性。 有关详细信息，请参阅 deque 类。  
@@ -10,11 +13,12 @@
 
 >**关联容器**  
 >在关联容器中，按照预定义的顺序插入元素，例如按升序排序。 无序的关联容器也可用。 关联容器可分为两个子集：映射和组集。  
+>
 >1. map，有时称为字典，包含键/值对。 键用于对序列排序，值与该键关联。 例如，map可能包含许多键（代表文本中每个独特的单词）和相应的值（代表每个单词在文本中出现的次数）。 map的无序版本是 unordered_map。 有关详细信息，请参阅 map 类和 unordered_map 类。  
 >2. set仅是按升序排列每个元素的容器，值也是键。 set的无序版本是 unordered_set。 有关详细信息，请参阅 set 类和 unordered_set 类。  
 >3. map 和 set 都仅允许将键或元素的一个实例插入容器中。 如果需要元素的多个实例，请使用multimap或multiset。 无序版本是 unordered_multimap 和 unordered_multiset。 有关详细信息，请参阅 multimap 类、unordered_multimap 类、multiset 类 和 unordered_multiset 类。  
 >4. 有序的映射和组集支持双向迭代器，其未排序副本支持向前迭代器。 有关更多信息，请参见 迭代器。  
-[C++ 标准库容器 | Microsoft Learn](https://learn.microsoft.com/zh-cn/cpp/standard-library/stl-containers?view=msvc-170)
+>   [C++ 标准库容器 | Microsoft Learn](https://learn.microsoft.com/zh-cn/cpp/standard-library/stl-containers?view=msvc-170)
 
 ```cpp
 共有函数
@@ -30,10 +34,11 @@ clear()：清空容器。
 ```
 
 ### list（双向链表）
+
 1. `pop_back`删除列表末尾的元素。
-`pop_front`删除列表起始处的一个元素。
-`push_back`在列表的末尾添加元素。
-`push_front`在列表的开头添加元素。
+   `pop_front`删除列表起始处的一个元素。
+     `push_back`在列表的末尾添加元素。
+     `push_front`在列表的开头添加元素。
 2. `list.begin()`&`list.end()`返回前和末尾的iterator
 3. `list.front()`&`list.back()`返回前和末尾的元素值
 4. [`list.empty()`测试列表是否为空](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#empty)
@@ -42,10 +47,8 @@ clear()：清空容器。
 7. [`list.remove()`将满足指定谓词的元素从列表中消除](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#remove_if)
 8. [`list.insert()`将一个、几个或一系列元素插入列表中的指定位置](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#insert)
 9. [`list.merage()`将元素从参数列表移除，将它们插入目标列表，将新的组合元素集以升序或其他指定顺序排序。](https://learn.microsoft.com/zh-cn/cpp/standard-library/list-class?view=msvc-170#merge)
-10. `reverse`反转列表中元素的顺序
-11. `unique`从列表中删除满足某些其他二元谓词的_相邻_重复元素或相邻元素
-
-
+10. `list.reverse()`反转列表中元素的顺序
+11. `list.unique()`从列表中删除满足某些其他二元谓词的_相邻_重复元素或相邻元素
 
 
 
