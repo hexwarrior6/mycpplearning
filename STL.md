@@ -90,6 +90,6 @@ clear()：清空容器。
 ## STL算法
 
 > 关于devcpp调试STL的问题：
-> 添加查看`*&a[0]@5`：我们看到了整个数组 *这种方法只使用于连续空间的容器*
+> 添加查看`*&a[0]@5`：我们看到了整个数组    *这种方法只适用于连续空间的容器*
 > ![图片](https://github.com/hexwarrior6/mycpplearning/assets/79214709/78abd0d9-6249-4502-ac86-53ffb306f34f)
 > [今天才学会的DevC++调试器查看连续内存STL容器内值的方法（DevC++）](https://www.cnblogs.com/flashhu/p/15727005.html)
